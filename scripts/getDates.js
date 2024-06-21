@@ -1,11 +1,16 @@
-const copydate = document.getElementById('copyright');
-const modifydate = document.getElementById('lastModified');
-
 const options = {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
-}
-
-copydate.innerHTML = '&copy; ' + new Date().getFullYear();
-modifydate.innerHTML = 'Last Modified: ' + new Date(document.lastModified).toLocaleDateString('en-US', options);
+    year: "numeric"
+  };
+  const options1 = {
+    month: "numeric",
+    day: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric"
+  };
+  const year = new Date().toLocaleDateString("en-US", options);
+  const lastModified = new Date(document.lastModified).toLocaleDateString("en-US", options1);
+  
+  document.getElementById("year").textContent = year;
+  document.getElementById("lastModified").textContent = lastModified;
