@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,49 +13,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <img src="images/profile.png" alt="Uwa Joseph's profile" width ="75" height="100">
-        <span>Uwa Joseph Uwa</span>
-    </header>
+    <div class="home">
+        <header>
+            <img src="images/profile.png" alt="Uwa Joseph's profile" width="75" height="100">
+            <h2>Uwa Joseph Uwa</h2>
 
-    
-    <nav>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
-        </ul>
-    </nav>
+        </header>
 
-    <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card">
-            <h2 id="h2">Learning Activities</h2>
+        <nav>
             <ul>
-                <li><a href="#">Learning Activity</a></li>
-                <li><a href="#">Learning Activity</a></li>
-                <li><a href="#">Learning Activity</a></li>
-                <li><a href="#">Learning Activity</a></li>
-                <li><a href="#">Learning Activity</a></li>
-                <li><a href="#">Learning Activity</a></li>
-
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
             </ul>
-        </section>
-        <section class="card">
-            <h2>Information</h2>
-            <p id="weather-placeholder"></p>
-            <p id="visits-placeholder"></p>
-        </section>
-    </main>
-    <footer>
-        <p id="copyright">&copy;2024 Uwa Joseph Uwa | Nigeria</p>
-        <p id="lastModified"></p>
-        <!-- <p>Uwa Joseph Uwa| Nigeria |</p> -->
-    </footer>
+        </nav>
 
-    <script src="scripts/scripts.js"></script>
+        <main>
+            <div class="stackTitle">
+                <h1>WDD 230: Web Frontend Development</h1>
+            </div>
+
+            <div class="stack">
+                <section class="card">
+                    <h2>Learning Activities</h2>
+                    <ul>
+                        <li>week01:<a href="week01/holygrail.html">layout</a> | <a href="week01/media-query.html">Media
+                                Query</a> | <a href="https://codepen.io/unclejoefx/pen/vYwRWKY">JS Pen</a></li>
+                        <li>Week02:<a href="#"></a></li>
+                        <li>Week03:<a href="#"></a></li>
+                        <li>Week04:<a href="#"></a></li>
+                        <li>Week05:<a href="#"></a></li>
+                        <li>Week06:<a href="#"></a></li>
+
+                    </ul>
+                </section>
+                <section class="card">
+                    <h2>Information</h2>
+                    <p>Uyo, Nigeria</p>
+                    <p>81°F Cloudy</p>
+                    <p>Number of visits: 2</p>
+                </section>
+            </div>
+
+        </main>
+        <footer>
+            <p>&copy; <span id="year">2024</span></p>
+            <p>Uwa Joseph Uwa | Nigeria</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+            <!-- <p>Uwa Joseph Uwa| Nigeria |</p> -->
+        </footer>
+
+    </div>
+    <script src="scripts/getDates.js"></script>
 
 </body>
+
 </html>

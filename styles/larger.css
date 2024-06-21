@@ -1,16 +1,16 @@
-@media screen and (min-width: 600px) {
-    main {
+@media screen and (min-width : 650px) {
+    .stack {
         display: grid;
-        /* grid-template-columns: 1fr; */
-        /* align-items: center; */
+        grid-template-columns: 2fr 1fr;
+        column-gap: .5rem;
     }
 
-    nav {
+    nav ul {
         display: flex;
-        justify-content: space-around;
-        width: 100%;
     }
-    nav {
-        grid-template-columns: 1fr 1fr;
+
+    nav ul li {
+        flex: 1 1 100%;
     }
+
 }
