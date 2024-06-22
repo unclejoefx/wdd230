@@ -2,112 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
-    /* margin: auto; */
+  }
+  
+  body {
     font-family: "Roboto", sans-serif;
     background-color: rgb(220, 245, 240);
-    font-weight: 400;   
-}
-
-h1 {
+    font-weight: 400;
+  }
+  
+  body .home {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
     font-size: 2rem;
     font-weight: 100;
-}
-
-main {
+  }
+  
+  main {
     display: block;
-}
-
-header, main {
+  }
+  
+  header,
+  main {
     margin: 0 auto;
-}
-
-header {
+  }
+  
+  header {
     background-color: #36394f;
-    color: white;
     display: grid;
-    column-gap: .5rem;
+    color: white;
     grid-template-columns: 1fr 2fr;
+    column-gap: .5rem;
     align-items: center;
     padding: 20px;
-}
-
-nav {
-    display: block;
+  }
+  
+  nav {
     background-color: green;
-    margin: 0 auto;
-    width: 100%;
-    align-items: center;
-}
-
-nav a {
+  }
+   
+  nav a {
     display: block;
     color: beige;
     text-align: center;
     padding: .5rem;
-    text-decoration: none
-}
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
 
-nav a:hover {
-    background-color: rgb(0, 0, 0.2);
-}
-
-nav .active {
-    background-color: rgba(0,0,0,0.5);
-}
-
-
-.stackTitle {
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  nav .active {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .stackTitle {
     display: block;
-    /* grid-template-columns: 1fr 2fr; */
-    align-items: center;
+    text-align: center;
     padding: 0.75rem 0;
-}
-
-.stack {
+  
+  }
+  
+  .stack {
     margin: 1rem 2vw;
-}
-
-.stack section {
+  }
+  
+  .stack section {
     border: 1px solid green;
     background-color: lightgreen;
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem 0;
-}
-
-.stack section h2 {
+  }
+  
+  .stack h2 {
     background-color: green;
     color: white;
-    text-align: center;
     display: block;
+    text-align: center;
     padding: .75rem 0;
-}
-
-.stack section p {
+  }
+  
+  .stack p {
     padding: 10px;
-    
-}
-
-.stack section ul {
+  }
+  
+  .stack section ul {
     padding: .5rem;
-}
-
-.card p {
+  }
+  
+  .card p {
     text-align: center;
-}
-
-header,footer {
-    text-align: center;
-    color: white;
-}
-
-footer {
+  }
+  
+  header,
+  footer {
     background-color: #36394f;
     color: white;
+  }
+  
+  footer {
+    display: block;
     text-align: center;
-    display: block
-}
+  
+  }
