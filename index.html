@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <!-- <link rel="stylesheet" href="styles/chamber-site-plan.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -25,17 +26,19 @@
         <header>
             <img src="images/profile.png" alt="Uwa Joseph's profile" width="75" height="100">
             <h2>Uwa Joseph Uwa</h2>
-
+            <img src="images/sun-moon-eclipe-svgrepo-com.svg" alt="Dark Moon" id="darkButton">
         </header>
 
         <nav>
-            <ul>
+            <button id="menu">☰</button>
+            <ul class="menuItems">
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Chamber</a></li>
+                <li><a href="chamber">Chamber</a></li>
                 <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
                 <li><a href="#">Form</a></li>
-        </nav>
+            </ul>
 
+        </nav>
         <main>
             <div class="stackTitle">
                 <h1>WDD 230: Web Frontend Development</h1>
@@ -47,7 +50,7 @@
                     <ul>
                         <li>week01:<a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media
                                 Query</a> | <a href="https://codepen.io/unclejoefx/pen/vYwRWKY">JS Pen</a></li>
-                        <li>Week02:<a href="week02/design.html">Design Principles</a> | <a href="https://codepen.io/unclejoefx/pen/BaexpvR">Hamburger Menu</a> | <a href="week02/bom.html">Book of Mormon</a></li>
+                        <li>Week02:<a href="week02/design.html">Design Principles</a> | <a href="https://codepen.io/unclejoefx/pen/BaexpvR">Hamburger Menu</a> | <a href="week02/bom.html" target="_blank">Book of Mormon</a></li>
                         <li>Week03:<a href="#"></a></li>
                         <li>Week04:<a href="#"></a></li>
                         <li>Week05:<a href="#"></a></li>
@@ -58,7 +61,7 @@
                 <section class="card">
                     <h2>Information</h2>
                     <p>Uyo, Nigeria</p>
-                    <p>81°F Cloudy</p>
+                    <p>81°C Cloudy</p>
                     <p>Number of visits: 2</p>
                 </section>
             </div>

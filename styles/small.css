@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    justify-self: center;
+    font-size: 1em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "IM Fell French Canon SC", Arial, sans-serif;
+    justify-self: center;
+    font-size: 1em;
+
+}
+
+body {
+    background-color: aqua;
+    font-family: "Work Sans", Helvetica, sans-serif;
+    padding: 5px 25px;
+    font-size: 0.5em;
+    margin: 0 auto;
+}
+
+div {
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+}
+
+.banner-box {
+    grid-column: 1 / 6;
+}
+
+.home-grid {
+    grid-column: 1 / 6;
+}
+
+header {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
+nav {
+    max-width: 960px;
+    margin: 0.1rem auto;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation li a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+footer {
+    background-color: yellow;
+    color: white;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.logo-box {
+    grid-column: 1 / 2;
+}
+
+.myName {
+    color: white;
+    grid-column: 3 / 6;
+}
+
+footer div {
+    justify-self: center;
+}
