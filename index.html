@@ -24,13 +24,13 @@
 <body>
     <div class="home">
         <header>
-            <img src="images/profile.png" alt="Uwa Joseph's profile" width="75" height="100">
+            <img src="images/profile.webp" alt="Uwa Joseph's profile" width="75" height="100">
             <h2>Uwa Joseph Uwa</h2>
-            <img src="images/buttle.png" alt="Buttle" id="darkButton" width="40" height="40">
+            <img src="images/buttle.png" alt="Dark Mode" id="darkButton" width="40" height="40">
         </header>
 
         <nav>
-            <button id="menu">☰</button>
+            <button id="menu"></button>
             <ul class="menuItems">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="chamber">Chamber</a></li>
@@ -40,6 +40,19 @@
 
         </nav>
         <main>
+            <div class="hero">
+                <picture>
+                    
+                    <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                    <!-- <source media="(max-width: 1000px)" srcset="images/hero-medium.webp"> -->
+                    <img src="images/hero-large.webp" alt="Aba Nigeria Temple" width="400" height="300" loading="lazy">
+
+                </picture>
+                <div class="herolabel">
+                    <span>Aba Nigeria Temple</span>
+
+                </div>
+            </div>
             <div class="stackTitle">
                 <h1>WDD 230: Web Frontend Development</h1>
             </div>
@@ -51,7 +64,7 @@
                         <li>week01:<a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media
                                 Query</a> | <a href="https://codepen.io/unclejoefx/pen/vYwRWKY">JS Pen</a></li>
                         <li>Week02:<a href="week02/design.html">Design Principles</a> | <a href="https://codepen.io/unclejoefx/pen/BaexpvR">Hamburger Menu</a> | <a href="week02/bom.html" target="_blank">Book of Mormon</a></li>
-                        <li>Week03:<a href="week03/images/landscape.webp" target="_blank">WebP</a> | <a href="week03/lazyload.html">Lazyload</a> | <a href="week03/responsive-images.html">Responsive Images</a></li>
+                        <li>Week03:<a href="week03/images/landscape.webp" target="_blank">WebP</a> | <a href="week03/lazyload.html">Lazyload</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html" target="_blank">Web Storage API</a></li>
                         <li>Week04:<a href="#"></a></li>
                         <li>Week05:<a href="#"></a></li>
                         <li>Week06:<a href="#"></a></li>
@@ -64,6 +77,11 @@
                     <p>81°C Cloudy</p>
                     <p>Number of visits: 2</p>
                 </section>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63589.48290312106!2d8.244095321679678!3d5.048075500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d7cd7013b8283%3A0x3a50a1f5c49a0992!2sTinapa%20Business%20and%20Leisure%20Resort!5e0!3m2!1sen!2sng!4v1720538494778!5m2!1sen!2sng"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
 
         </main>
@@ -71,7 +89,6 @@
             <p>&copy; <span id="year"></span>🌼Uwa Joseph Uwa🌼 Nigeria </p>
             <!-- <p>&copy; 2024 Uwa Joseph Uwa | Nigeria</p> -->
             <p>Last modified: <span id="lastModified"></span></p>
-            <!-- <p>Uwa Joseph Uwa| Nigeria |</p> -->
         </footer>
 
     </div>

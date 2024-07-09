@@ -1,115 +1,187 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-    background-color: rgb(220, 245, 240);
-    font-weight: 400;
-  }
-  
-  body .home {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    font-weight: 100;
-  }
-  
-  main {
-    display: block;
-  }
-  
-  header,
-  main {
-    margin: 0 auto;
-  }
-  
-  header {
-    background-color: #36394f;
-    display: grid;
-    color: white;
-    grid-template-columns: 1fr 2fr;
-    column-gap: .5rem;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  nav {
-    background-color: green;
-  }
-   
-  nav a {
-    display: block;
-    color: beige;
-    text-align: center;
-    padding: .5rem;
-    text-decoration: none;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  nav a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  
-  nav .active {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .stackTitle {
-    display: block;
-    text-align: center;
-    padding: 0.75rem 0;
-  
-  }
-  
-  .stack {
-    margin: 1rem 2vw;
-  }
-  
-  .stack section {
-    border: 1px solid green;
-    background-color: lightgreen;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1rem 0;
-  }
-  
-  .stack h2 {
-    background-color: green;
-    color: white;
-    display: block;
-    text-align: center;
-    padding: .75rem 0;
-  }
-  
-  .stack p {
-    padding: 10px;
-  }
-  
-  .stack section ul {
-    padding: .5rem;
-  }
-  
-  .card p {
-    text-align: center;
-  }
-  
-  header,
-  footer {
-    background-color: #36394f;
-    color: white;
-  }
-  
-  footer {
-    display: block;
-    text-align: center;
-  
-  }
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(220, 245, 240);
+  font-weight: 400;
+}
+
+body .home {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+main {
+  display: block;
+}
+
+header,
+main {
+  margin: 0 auto;
+}
+
+header {
+  background-color: #36394f;
+  display: grid;
+  color: white;
+  position: relative;
+  grid-template-columns: 1fr 2fr;
+  column-gap: .5rem;
+  align-items: center;
+  padding: 20px;
+}
+
+#darkButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  cursor: pointer;
+}
+
+main.dark,
+.home.dark {
+  background-color: black;
+}
+
+main.dark h1 {
+  color: white;
+}
+
+nav {
+  background-color: green;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  display: none;
+  color: beige;
+  text-align: center;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+ul.open a {
+  display: block;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+nav .active {
+  background-color: rgba(0, 0, 0, .4);
+}
+
+#menu {
+  font-size: 2rem;
+  border: 0;
+  background: none;
+  color: #fff;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  padding: .25rem 2vw;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+.hero {
+  position: relative;
+}
+
+.hero picture {
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.herolabel {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.herolabel span {
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stackTitle h1 {
+  display: block;
+  text-align: center;
+  padding: 0.75rem 0;
+
+}
+
+.stack {
+  margin: 1rem 2vw;
+}
+
+.stack section {
+  border: 1px solid green;
+  background-color: lightgreen;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.stack h2 {
+  background-color: green;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: .75rem 0;
+}
+
+.stack p {
+  padding: 10px;
+}
+
+.stack ul {
+  padding: .5rem;
+}
+
+.card p {
+  text-align: center;
+}
+
+.stack iframe {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+header,
+footer {
+  background-color: #36394f;
+  color: white;
+}
+
+footer {
+  display: block;
+  text-align: center;
+
+}
