@@ -40,16 +40,49 @@
             </ul>
         </nav>
         <main>
-            <h1>Portal Registration</h1>
-            <p>Thank you for registering on our site, we'll get back to you shortly.</p>
+            <h1><strong>Portal Registration</strong></h1>
+            <form action="record.html" method="get" class="wf">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label> Username* <input type="text" name="username" id="username" required></label>
+                    <label> Password* <input type="password" name="pass" id="pass" required pattern="[A-Za-z]{8,}"
+                            title="The value must be at least eight (8) characters long and can only be alpha-numeric"></label>
+                    <label> Confirm Password* <input type="password" name="cpass" id="cpass" required
+                            pattern="[A-Za-z]{8,}"></label>
+                    <div id="feedback"></div>
+                    <label>Email* <input type="email" name="email" id="email" required
+                            pattern="[a-zA-Z0-9._%+\-]+@byui\.edu"
+                            title="Please enter an email address from the byui.edu domain"
+                            placeholder="email from the byui.edu domain"></label>
+                    <label>Page Rating
+                        <span id="displayRange">1</span>
+                        <input type="range" id="range" name="range" min="1" max="10" value="1" step="1"
+                            list="rangevalues">
+                    </label>
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </fieldset>
+                <input type="submit" value="Send My Application">
+            </form>
         </main>
-        <<footer>
+        <footer>
             <p>&copy; <span id="year"></span>🌼Uwa Joseph Uwa🌼 Nigeria </p>
             <!-- <p>&copy; 2024 Uwa Joseph Uwa | Nigeria</p> -->
             <p>Last modified: <span id="lastModified"></span></p>
         </footer>
     </div>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/formValidation.js"></script>
 </body>
 
 </html>
