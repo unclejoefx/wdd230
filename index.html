@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/visits.js"></script>
+    <script src="scripts/visits.js"> defer</script>
+    <script src="scripts/links.js" defer></script>
+    <script src="scripts/weatherInfo.js" defer></script>
+    <script src="scripts/getDates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -21,6 +24,7 @@
     <meta property="og:image" content="https://en.wikipedia.org/wiki/Calabar#/media/File:Hand_sculpture_roundabout,_Calabar,_Cross_River_state2.jpg"> 
     <meta property="og:url" content="https://unclejoefx.github.io/wdd230">
 </head>
+
 
 <body>
     <div class="home">
@@ -40,6 +44,7 @@
             </ul>
 
         </nav>
+
         <main>
             <div class="hero">
                 <picture>
@@ -54,47 +59,37 @@
 
                 </div>
             </div>
+
             <div class="stackTitle">
                 <h1>WDD 230: Web Frontend Development</h1>
             </div>
 
             <div class="stack">
-                <section class="card">
+                <section class="card" id="activity">
                     <h2>Learning Activities</h2>
-                    <ul>
-                        <li>week01:<a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media
-                                Query</a> | <a href="https://codepen.io/unclejoefx/pen/vYwRWKY">JS Pen</a></li>
-                        <li>Week02:<a href="week02/design.html">Design Principles</a> | <a href="https://codepen.io/unclejoefx/pen/BaexpvR">Hamburger Menu</a> | <a href="week02/bom.html" target="_blank">Book of Mormon</a></li>
-                        <li>Week03:<a href="week03/images/landscape.webp" target="_blank">WebP</a> | <a href="week03/lazyload.html">Lazyload</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html" target="_blank">Web Storage API</a> | <a href="chamber/discover.html">Discover</a></li>
-                        <li>Week04:<a href="https://codepen.io/unclejoefx/pen/RwzrMyP" target="_blank">Pseudo-classes</a> | <a href="week04/images/Combination-exercise.png" target="_blank">Combinator Excercise</a> | <a href="week04/tablebuild.html"> Table Build</a> | <a href="week04/form-start/Form-start/"> HTML Forms</a> | <a href="form.html"> Registration </a> | <a href="chamber/join.html"> Join Chamber</a></li>
-                        <li>Week05:<a href="https://codepen.io/unclejoefx/pen/xxoVPJQ" target="_blank"> Pseudo-element </a> | <a href="week05/new-ward-members.json" target="_blank"> JSON</a> | <a href="week05/prophets.html" target="_blank"> Fetch API</a> | <a href="week05/weather.html" target="_blank">Weather API</a></li>
-                        <li>Week06:<a href="#"></a></li>
-
-                    </ul>
                 </section>
                 <section class="card">
                     <h2>Information</h2>
-                    <p>Uyo, Nigeria</p>
-                    <p>81°C Cloudy</p>
-                    <p>Number of visits: 2</p>
+                    <p id="town"></p>
+                    <p id="temperature"></p>
+                    <figure id="tempIcon"></figure>
+                    <p id="tempDescription"></p>
+                    <p>Number of visits: <span class="visits"></span></p>
                 </section>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63589.48290312106!2d8.244095321679678!3d5.048075500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d7cd7013b8283%3A0x3a50a1f5c49a0992!2sTinapa%20Business%20and%20Leisure%20Resort!5e0!3m2!1sen!2sng!4v1720538494778!5m2!1sen!2sng"
-                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63589.48290312106!2d8.244095321679678!3d5.048075500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d7cd7013b8283%3A0x3a50a1f5c49a0992!2sTinapa%20Business%20and%20Leisure%20Resort!5e0!3m2!1sen!2sng!4v1720538494778!5m2!1sen!2sng"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
 
+            </div>
         </main>
         <footer>
             <p>&copy; <span id="year"></span>🌼Uwa Joseph Uwa🌼 Nigeria </p>
             <!-- <p>&copy; 2024 Uwa Joseph Uwa | Nigeria</p> -->
             <p>Last modified: <span id="lastModified"></span></p>
         </footer>
-
     </div>
-    <script src="scripts/getDates.js"></script>
-
 </body>
 
 </html>
