@@ -54,7 +54,7 @@
                     "title": "Web Storage API"
                 },
                 {
-                    "url": "week03/discover.html",
+                    "url": "chamber/discover.html",
                     "title": "Discover"
                 }
             ]
@@ -67,7 +67,7 @@
                     "title": "Pseudo-classes"
                 },
                 {
-                    "url": "images/combinators_exercise.png",
+                    "url": "week04/images/Combination-exercise.png",
                     "title": "Combinator Exercise"
                 },
                 {
@@ -79,7 +79,7 @@
                     "title": "HTML Forms"
                 },
                 {
-                    "url": "week04/form.html",
+                    "url": "form.html",
                     "title": "Registration"
                 },
                 {

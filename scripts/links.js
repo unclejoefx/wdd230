@@ -10,7 +10,7 @@ async function getLinks() {
             // console.log(data)
             displayLinks(data.weeks);
         } else {
-            throw Error(response.text())
+            throw Error(response.text());
         }
     } catch (error) {
         console.log(error);
@@ -19,10 +19,12 @@ async function getLinks() {
 getLinks();
 
 function displayLinks(weeks) {
-    const list = document.createElement('ul');
+    const list = document.querySelector('#activity ul')
+    list.innerHTML = '';
+    // const list = document.createElement('ul');
     weeks.forEach(weekData => {
         let listItem = document.createElement('li');
-        listItem.textContent = `${weekData.week}:`;
+        listItem.innerHTML = `${weekData.week}:`;
 
         weekData.links.forEach(link => {
             let anchor = document.createElement('a');
@@ -40,5 +42,5 @@ function displayLinks(weeks) {
     
 
 
-    activities.appendChild(list);
+    activity.appendChild(list);
 }
