@@ -1,5 +1,8 @@
-## Course: Web Frontend Development (WDD230)  
+## WDD230: Web Frontend Development I 
 ### Brigham Young University - Idaho, USA
 
-
-This repository contains all my school project for this course.
+This repository contains my school project on building and deploying a personal and responsive website.
+Major languages used are: 
+- HTML
+- CSS
+- JavaScript
