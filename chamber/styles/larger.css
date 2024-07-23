@@ -9,13 +9,21 @@
         display: none;
     }
 
-    nav ul {
+    nav {
         display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
+    nav a:hover {
+        background-color: rgba(255, 255, 255, .4);
+    }
+    /* nav ul {
+        display: flex;
+    } */
 
-    nav ul li {
+    /* nav ul li {
         flex: 1 1 100%;
-    }
+    } */
 
     ul.menuItems a {
         display: flex;

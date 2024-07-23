@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinapa Chamber of Commerce Directory</title>
+    <meta name="description" content=" Tinapa Chamber of Commerce Directory">
+    <meta name="author" content="Uwa Joseph Uwa">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/fetchMembers.js" defer></script>
+    <script src="scripts/spotLight.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="portal home page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://en.wikipedia.org/wiki/Calabar#/media/File:Hand_sculpture_roundabout,_Calabar,_Cross_River_state2.jpg"> 
+    <meta property="og:url" content="https://unclejoefx.github.io/wdd230">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <img src="images/tinapa_logo.jpeg" alt="Tinapa Logo" id="logo" width="75" height="75">
+            <h1>Tinapa Chamber of Commerce</h1>
+        </div>
+        <img src="images/Hand_sculpture.jpg" alt="Tinapa landscape" id="land">
+        </div>
+        
+    </header>
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="class">
+            <h2>Chamber Business Directory</h2>
+            <!-- <div class="views"> -->
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            <!-- </div> -->
+            <hr>
+        </div>
+            <article class="directory-container grid">
+
+            </article>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span>Tinapa Chamber of Commerce - WDD </p>
+        <p><p>info@tinapachamber.com</p></p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+        <script src="../scripts/getDates.js"></script>
+</body>
+</html>

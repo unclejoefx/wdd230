@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/menu.css">
     <script src="scripts/join.js" defer></script>
     <meta name="author" content="Uwa Joseph Uwa">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -22,9 +23,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="top">
@@ -32,18 +36,15 @@
             <h1>Tinapa Chamber of Commerce</h1>
         </div>
         <img src="images/Hand_sculpture.jpg" alt="Tinapa landscape" id="land">
-        <button id="Contact">Contact Us</button>
+        <p><a href="join.html">Join Us</a></p>
     </header>
-    <nav>
-        <button id="menu"></button>
-        <ul class="menuItems">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">News letters</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="join.html">Join Us</a></li>
-        </ul>
 
+    <button id="nav-btn"></button>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join Us</a>
     </nav>
     <main>
         <div class="join">
@@ -70,7 +71,8 @@
                         <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
                         <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
                         <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
-                        <label><br></br><strong>Business Description</strong><textarea name="bdescription" id="bdescription"></textarea></label>
+                        <label><br></br><strong>Business Description</strong><textarea name="bdescription"
+                                id="bdescription"></textarea></label>
                         <label><input type="hidden" name="timestamph" id="timestamph"></label>
                     </fieldset>
                     <input type="submit" value="Join the Chamber Now">
@@ -79,11 +81,14 @@
             <section class="card">
                 <h3>Membership Benefits</h3>
                 <p>NP Membership: For non profit organizations.</p>
-                <p>Bronze Membership: $99/month for standard tranning and advice, two posts per week on news letters and 10% off
+                <p>Bronze Membership: $99/month for standard tranning and advice, two posts per week on news letters and
+                    10% off
                     discount on every event attended.</p>
-                <p>Silver Membership: $499/month for advanced tranning and professional advice, ten posts per week on news letters and 20% off
+                <p>Silver Membership: $499/month for advanced tranning and professional advice, ten posts per week on
+                    news letters and 20% off
                     discount on every event attended.</p>
-                <p>Gold Membership: $999/month for premium tranning, professional and expert advice, complementary access. Twenty posts per week on news letters and 30% off
+                <p>Gold Membership: $999/month for premium tranning, professional and expert advice, complementary
+                    access. Twenty posts per week on news letters and 30% off
                     discount on every event attended.</p>
             </section>
         </div>

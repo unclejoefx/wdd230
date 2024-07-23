@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/visits.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/calWeather.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/spotLight.js" defer></script>
     <meta name="author" content="Uwa Joseph Uwa">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta property="og:title" content="Tinapa Chamber of Commerce">
@@ -31,51 +35,53 @@
         <div class="top">
             <img src="images/tinapa_logo.jpeg" alt="Tinapa Logo" id="logo" width="75" height="75">
             <h1>Tinapa Chamber of Commerce</h1>
+            <!-- <p><a href="join.html">Join Us</a></p> -->
         </div>
         <img src="images/Hand_sculpture.jpg" alt="Tinapa landscape" id="land">
-        <button id="Contact">Contact Us</button>
+        <!-- <button id="Contact">Contact Us</button> -->
     </header>
 
-    <nav>
-        <button id="menu"></button>
-        <ul class="menuItems">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">News letters</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="join.html">Join Us</a></li>
-        </ul>
 
+    <button id="nav-btn"></button>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join Us</a>
     </nav>
 
     <main>
         <section class="card">
-            <h2>Current Events</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum, corrupti, molestias
-                accusamus
-                tenetur consequatur ad provident facere eveniet eligendi dolor maxime voluptatum fuga, quia
-                consequuntur
-                ipsam enim praesentium fugit!</p>
+            <h2>Chamber of Commerce Event</h2>
+            <section class="current-event">
+                <p>Join us for a Meet and Greet on Wednesday at 7:00 PM!</p>
+                <button onclick="closeBanner()">Close</button>
+            </section>
         </section>
+
+        
         <section class="card" id="wheater">
-            <h2>Wheater Information</h2>
-            <p>Uyo, Nigeria</p>
-            <p>81°C Cloudly</p>
-            <p>Number of visits: 2</p>
+            <h2 class="h2">Weather Information</h2>
+            <p id="weather">Current Weather<br><span id="weather-info"></span></p>
+            <figure>
+                <img id="weather-icon" src="#" alt="Weather icon">
+                <figcaption></figcaption>
+            </figure>
+            <h4>3-Day Forecast</h4>
+            <ul id="forecast-list"></ul>
         </section>
+
         <section class="card" id="news">
-            <h2>Lastest News</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero commodi ut sapiente error eveniet
-                nostrum necessitatibus odio ad, reprehenderit eius labore in provident sit laboriosam dolore dicta
-                aspernatur iusto laborum.</p>
+            <h2>Member Spotlight</h2>
+            <!-- <Three major spotlight members will be displayed here -->
         </section>
     </main>
+
     <footer>
-        <p>&copy; <span id="year"></span>🌼Uwa Joseph Uwa🌼 Nigeria </p>
-        <p>Tinapa Chamber of Commerce | WDD230 - Project </p>
+        <p>&copy; <span id="year"></span>Tinapa Chamber of Commerce | WDD230 - Project </p>
+        <p>info@tinapachamber.com</p>
         <p>Last modified: <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/chamber.js"></script>
 </body>
 
 </html>
