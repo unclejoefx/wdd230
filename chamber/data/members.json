@@ -4,7 +4,7 @@
         "address": "76 Marian road, Calabar, Cross River State",
         "phone": "+2347 06476 6284",
         "url": "https://stemtech.com.ng",
-        "image": "../images/samtech-com.webp",
+        "image": "../images/logo-stem.webp",
         "membership_level": "Silver"
     },
 
@@ -13,7 +13,7 @@
         "address": "Northern Industrial Layout, Behind Zone 6 Police Hqtrs, Off Murtala Mohammed Highway, Esuk Utan 540281, Calabar.",
         "phone": "07034044047",
         "url": "https://montysuites.com/",
-        "image": "../images/monty-suites-calabar.webp",
+        "image": "../images/MONTY-SUITES-LOGO",
         "membership_level": "Silver"
     },
 
@@ -22,7 +22,7 @@
         "address": "Plot 1 & 2 Northern Industrial Layout Esuk Utan, Calabar, Cross River, Nigeria",
         "phone": " 08062549484",
         "url": "https://www.hazconnigerialimited.com/",
-        "image": "../images/hazcon.webp",
+        "image": "../images/hazcon1.webp",
         "membership_level": "Bronze"
     },
 
@@ -31,7 +31,7 @@
         "address": "Shop B9, Tinapa Business Resort, Tinapa, 52061, Calabar, Nigeria, Calabar, Cross River",
         "phone": "08059494640",
         "url": "https://ecobank.com/",
-        "image": "../images/ecobank.webp",
+        "image": "../images/ecobank1.webp",
         "membership_level": "Gold"
     },
 
@@ -40,7 +40,7 @@
         "address": "No. 2 Diamond Hill, Opposite State CID, Calabar, Cross River, Nigeria",
         "phone": "08033106164",
         "url": "http://ekesonglobal.com.ng/",
-        "image": "../images/crane.webp",
+        "image": "../images/ekeson logo.webp",
         "membership_level": "Silver"
     },
 
@@ -49,7 +49,7 @@
         "address": "Oban Road, Anegeje Town,Oban Division of the Cross River National Park, Calabar",
         "phone": "08077460145",
         "url": "https://www.nigeriagalleria.com/Nigeria/States_Nigeria/Cross-River/Kwa-Falls-Calabar.html",
-        "image": "../images/kwa-falls.webp",
+        "image": "../images/kwa1.webp",
         "membership_level": "Bronze"
     },
 
@@ -58,7 +58,7 @@
         "address": "Murtala Mohammed Way, 540281 Calabar, Nigeria",
         "phone": "08066900009",
         "url": "https://metropolitanhotelcalabar.com/",
-        "image": "../images/metro-calabar.webp",
+        "image": "../images/metro1.webp",
         "membership_level": "Gold"
     }
 ]
