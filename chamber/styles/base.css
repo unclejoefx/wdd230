@@ -92,7 +92,7 @@ header {
     gap: 40px;
     justify-self: center;
     padding: 30px;
-    color: indigo;
+    color: rgba(76, 0, 130, 0.918);
 }
 
 #spotlight h3 {
@@ -147,6 +147,7 @@ span {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
     text-align: center;
+    display: flex;
 }
 
 /* Block display for navigation links with consistent styling */
@@ -222,7 +223,7 @@ footer {
 
 /* Detailed item styling within the directory */
 .directory-item {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 0.5rem;
     background-color: #eee;
     text-align: center;
@@ -266,7 +267,7 @@ footer {
     padding: 5px 10px;
     margin-top: 10px;
     background-color: black; 
-    color: white;
+    color: red;
     border: none;
     cursor: pointer;
 }

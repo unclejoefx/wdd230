@@ -50,7 +50,7 @@ header {
     margin: 0 0 10px 0;
     font-size: 1rem;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-cta p {
@@ -59,7 +59,7 @@ header {
 
 .hero-cta a {
     display: inline-block;
-    background-color: black;
+    background-color: green;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -82,7 +82,7 @@ header {
 .spotlight-wrapper {
     text-align: center;
     padding: 1rem;
-    background-color: beige;
+    background-color: red;
 }
 
 /* Grid setup for spotlight items */
@@ -189,7 +189,7 @@ nav a {
 
 /* Hover effects for links */
 a:hover, ul li a:hover {
-    color: gold; /* Unified hover color */
+    color: pink; /* Unified hover color */
 }
 
 /* List item display for inline navigation */
@@ -224,7 +224,7 @@ footer {
 .directory-item {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: #eee;
+    background-color: #bbb;
     text-align: center;
 }
 
@@ -232,7 +232,7 @@ footer {
 .directory-item img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 0 10px #333;
+    box-shadow: 0 0 10px #bbb;
 }
 
 /* Text styling within directory items */
