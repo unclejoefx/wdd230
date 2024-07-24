@@ -1,95 +1,146 @@
+/* Global reset and box-sizing to ensure consistent sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styling for overall page aesthetics */
 body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: azure;
+    margin: 0% auto;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+/* Grid display for header to align items properly */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+/* Responsive hero image setup */
+.hero-wrapper {
+    margin-top: -17px; /* Ensure this negative margin is necessary */
+    position: relative;
+    background-image: url('../images/Hand_sculpture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    padding-top: 200px;
+    width: 313px;
+}
+
+
+/* Text alignment for CTA within the hero wrapper */
+.hero-cta {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    width: 90%;
+    padding: 2px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.hero-cta h1 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta p {
+    margin: 0;
+}
+
+.hero-cta a {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+
+/* Grid display for section wrappers */
+.section-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1% auto;
+    text-align: center;
+}
+
+/* Consistent text alignment for spotlight wrapper */
+.spotlight-wrapper {
+    text-align: center;
+    padding: 1rem;
+    background-color: beige;
+}
+
+/* Grid setup for spotlight items */
+#spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-self: center;
+    padding: 30px;
+    color: indigo;
+}
+
+#spotlight h3 {
     color: black;
 }
 
-
-header {
-    display: block;
-    position: relative;
-    column-gap: .25rem;
-    padding: 20px;
-    align-items: center;
-}
-
-header .top {
+/* Grid configuration for spotlight detail */
+.spotlight {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    /* justify-content: center; */
-    text-align: center;
-    column-gap: .25rem;
-    padding: 1rem;
+    grid-template-columns: 1fr;
 }
 
-header,
-footer {
-    background-color: skyblue;
-    color: #1D1E18;
-    text-align: center;
+/* Background color for paragraphs inside spotlight */
+.spotlight p {
+    background-color: #eceeef;
 }
 
-#logo {
-    justify-self: center;
+/* Background styling for current events and weather sections */
+.current-event, .weather {
+    background-color: beige;
 }
 
-header #land {
-    position: relative;
-    max-width: 100%;
-    justify-self: center;
+.current-event {
+    color: green;
+    padding: 20px;
 }
 
-header #contact {
-    position: absolute;
-    bottom: 50px;
-    right: 40px;
+#event-banner {
+    background-color: azure;
+    padding: 20px;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    /* text-align: justify; */
+/* Basic grid setup adjusted for responsiveness */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Simplified grid setup for responsiveness */
+    gap: 20px;
+    padding: 20px;
 }
 
-nav {
-    background-color: #1D1E18;
-    color: #fff;
-}
-/* nav {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    align-items: center;
-} */
-/* nav ul {
-    display: flex;
-    list-style-type: none;
-    text-align: center;
-} */
-
-/* nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: .5rem;
-    text-decoration: none;
-} */
-
-nav .active {
-    background-color: rgba(255, 255, 255, .2);
+/* Span styling for emphasis and spacing */
+span {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    font-size: 2rem;
 }
 
+/* Unified menu background styling */
 .menu {
     background-color: #36454f;
     margin: 1rem auto;
@@ -122,111 +173,103 @@ nav a {
     gap: 20px;
 }
 
-#nav-btn {
-    background-color: white;
+/* styling for information section */
+
+#information {
+    padding: 1rem;
+    background-color: azure;
+    text-align: center;
+    color: green;
+}
+
+#information h3 {
     color: black;
-}
-
-/* #menu {
-    font-size: 2rem;
-    border: 0;
-    background: black;
-    color: #fff;
-    width: 100%;
-    text-align: right;
-    cursor: pointer;
-    padding: .25rem 2vw;
-} */
-
-/* #menu.open {
-    display: block;
-}
-
-#menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "X";
-} */
-
-main {
-    display: block;
-}
-
-main .card {
-    border: 1px solid #D9FFF5;
-    background-color: #AAD2BA;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1rem 0;
-    text-align: center;
-
-}
-
-.card h2 {
-    background-color: #1D1E18;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: .75rem 0;
-}
-
-.card p {
     padding: 10px;
 }
 
-#wheater p {
-    text-align: center;
+/* Hover effects for links */
+a:hover, ul li a:hover {
+    color: green; /* Unified hover color */
 }
 
+/* List item display for inline navigation */
+ul li {
+    display: inline-block;
+}
+
+/* Footer styling for color consistency and layout */
 footer {
-    display: block;
+    color: #eceeef;
+    display: grid;
+    background-color: #36454f;
     text-align: center;
 }
 
-/* Consistent text alignment for spotlight wrapper */
-.spotlight-wrapper {
+/* Responsive directory container setup */
+.directory-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: center;
+    font-size: small;
+}
+
+/* Styling for links within the directory container */
+.directory-container a {
+    font-size: smaller;
+    font-weight: lighter;
+}
+
+/* Detailed item styling within the directory */
+.directory-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
     text-align: center;
-    padding: 1rem;
-    background-color: beige;
 }
 
-#spotlight {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    justify-self: center;
-    padding: 30px;
-    color: indigo;
-}
-
-#spotlight h3 {
-    color: black;
-}
-
-/* Grid configuration for spotlight detail */
-.spotlight {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-/* Menu styles */
-nav {
+/* Image styling for directory items */
+.directory-item img {
     max-width: 100%;
-    margin: 1rem auto;
+    height: auto;
+    box-shadow: 0 0 10px #333;
 }
 
-/* small view navigation */
-#nav-btn {
-    font-size: 1.5rem;
-    border: 0;
-    background: beige;
-    color: #000;
-    position: absolute;
-    top: 0;
-    right: 0;
+/* Text styling within directory items */
+.directory-item h3, .directory-item p, .directory-item a {
+    margin: 0.1rem;
 }
 
+/* Flex layout for list view in the directory */
+.directory-container.list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid setup for directory items in list view */
+.directory-container.list .directory-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+/* Hiding images in list view for directory items */
+.directory-container.list .directory-item img {
+    display: none;
+}
+
+/* Styling for the event section close button */
+.event-section button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: black; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 #nav-btn::before {
     content: "☰";
 }
@@ -254,34 +297,4 @@ nav {
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
-}
-
-@media screen and (min-width: 600px) {
-    #nav-btn {
-        display: none;
-    }
-
-    .menu {
-        flex-direction: row;
-        justify-content: space-around;
-
-    }
-
-    .menu a {
-        display: flex;
-        transition: 0.3s;
-        transform-origin: center;
-        width: 100px;
-
-    }
-
-    nav {
-        overflow: hidden; /* Contain overflow within the nav */
-    }
-
-    a:hover {
-        color: gold;
-        transform: scale(1.1);
-
-    }
 }

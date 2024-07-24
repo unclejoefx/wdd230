@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function fetchMembers() {
         const baseURL = 'https://unclejoefx.github.io/wdd230/chamber/';
-        const linksURL = 'https://unclejoefx.github.io/wdd230/chamber/data/members.json';
+        const linksURL = baseURL + 'data/members.json';
 
         try {
             const response = await fetch(linksURL);

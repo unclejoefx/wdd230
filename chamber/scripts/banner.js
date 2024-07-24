@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     });
     
-    // Function to close the banner
+    // This function closes the banner
     function closeBanner() {
     document.getElementById('event-banner').style.display = 'none';
     }

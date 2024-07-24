@@ -24,7 +24,7 @@ header {
 .hero-wrapper {
     margin-top: -17px; /* Ensure this negative margin is necessary */
     position: relative;
-    background-image: url('../images/hero-img.jpg');
+    background-image: url('../images/Hand_sculpture.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ header {
 
 /* Background color for paragraphs inside spotlight */
 .spotlight p {
-    background-color: #eceeef;
+    background-color: #ecedef;
 }
 
 /* Background styling for current events and weather sections */
@@ -202,6 +202,7 @@ footer {
     color: #eceeef;
     display: grid;
     background-color: #36454f;
+    text-align: center;
 }
 
 /* Responsive directory container setup */
