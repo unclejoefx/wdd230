@@ -1,5 +1,5 @@
 const baseURL = 'https://unclejoefx.github.io/wdd230/chamber/';
-const linksURL = 'https://unclejoefx.github.io/wdd230/chamber/data/members.json';
+const linksURL = baseURL + 'data/members.json';
 
 document.addEventListener('DOMContentLoaded', () => {
     const fetchData = async () => {
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 memberItem.classList.add('directory-item');
                 memberItem.innerHTML = `
                     <img src="images/${member.image}" alt="${member.name}">
-                    <h2>${member.name}</h2>
+                    <h3>${member.name}</h3>
                     <p>${member.address}</p>
                     <p>${member.phone}</p>
                     <a href="${member.url}">${member.url}</a>

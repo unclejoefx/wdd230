@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="styles/directory-base.css">
     <link rel="stylesheet" href="styles/directory-larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- <script src="scripts/menu.js" defer></script> -->
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/views.js" defer></script>
-    <script src="scripts/banner.js" defer></script>
+    <link rel="stylesheet" href="styles/menu.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/fetchMembers.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -25,40 +24,37 @@
 </head>
 <body>
     <header>
-        <div class="top">
-            <img src="images/tinapa_logo.jpeg" alt="Tinapa Logo" id="logo" width="75" height="75">
-            <h1>Tinapa Chamber of Commerce</h1>
+        <div class="hero-wrapper">
+            <div class="hero-cta">
+                <h1>Tinapa Chamber of Commerce</h1>
+                <p><a href="join.html">Join Us</a></p>
+            </div>
         </div>
-        <img src="images/Hand_sculpture.jpg" alt="Tinapa landscape" id="land">
-        </div>
-        
     </header>
 
-    <nav>
-        <button id="menu"></button>
-        <ul class="menuItems">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="join.html">Join Us</a></li>
-            <li><a href="directory.html" class="active">Directory</a></li>
-            <li><a href="discover.html">Discover</a></li>
-        </ul>
+    <button id="nav-btn"></button>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="../week01/chamber-site-plan.html">Site Plan</a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html">Form</a>
     </nav>
 
     <main>
-        <div id="cards" class="list">
-            <h2>Business Directory</h2>
-            <div class="views">
-                <button id="grid">⏹️Grid</button>
-                <button id="list">📄List</button>
-            </div>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
         </div>
-    </main>
-        
+        <hr>
+        <article class="directory-container grid">
+            <!-- Directory items will be injected here by JavaScript -->
+        </article>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span>Tinapa Chamber of Commerce - WDD </p>
-        <p><p>info@tinapachamber.com</p></p>
-        <p>Last modified: <span id="lastModified"></span></p>
+        <div><p id="copyright"></p>Tinapa Chamber of Commerce</div>
+        <p id="lastModified"></p>
+        <p>info@tinapachamber.com</p>
+        <p>WDD230 Project | BYU</p>
     </footer>
         <script src="../scripts/getDates.js"></script>
 </body>
