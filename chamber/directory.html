@@ -7,12 +7,12 @@
     <title>Tinapa Chamber of Commerce Directory</title>
     <meta name="description" content=" Tinapa Chamber of Commerce Directory">
     <meta name="author" content="Uwa Joseph Uwa">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/directory-base.css">
+    <link rel="stylesheet" href="styles/directory-larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <script src="scripts/menu.js" defer></script>
-    <script src="scripts/fetchMembers.js" defer></script>
-    <script src="scripts/spotLight.js" defer></script>
+    <!-- <script src="scripts/menu.js" defer></script> -->
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/views.js" defer></script>
     <script src="scripts/banner.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,17 +45,15 @@
     </nav>
 
     <main>
-        <div id="class">
-            <h2>Chamber Business Directory</h2>
-            <!-- <div class="views"> -->
+        <div id="cards" class="list">
+            <h2>Business Directory</h2>
+            <div class="views">
                 <button id="grid">⏹️Grid</button>
                 <button id="list">📄List</button>
-            <!-- </div> -->
-            <hr>
+            </div>
         </div>
-            <article class="directory-container grid">
-
-            </article>
+    </main>
+        
     </main>
     <footer>
         <p>&copy; <span id="year"></span>Tinapa Chamber of Commerce - WDD </p>
