@@ -82,7 +82,7 @@ header {
 .spotlight-wrapper {
     text-align: center;
     padding: 1rem;
-    background-color: beige;
+    background-color: lightgray;
 }
 
 /* Grid setup for spotlight items */
@@ -92,7 +92,7 @@ header {
     gap: 40px;
     justify-self: center;
     padding: 30px;
-    color: rgba(76, 0, 130, 0.918);
+    color: indigo;
 }
 
 #spotlight h3 {

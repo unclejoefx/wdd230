@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tinapa Chamber of Commerce</title>
-    <meta name="description"
-        content="This site promotes the business interest and opportunities for both the state and the tourist who visit the city of Tinapa and promotes an insight about the area, attracting aditional business, tourism and people to know the city and all the opportunities inside the city.">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/menu.js" defer></script>
-    <script src="scripts/calWeather.js" defer></script>
-    <script src="scripts/spotLight.js" defer></script>
-    <script src="scripts/banner.js" defer></script>
-    <script src="scripts/visits.js" defer></script>
-    <meta name="author" content="Uwa Joseph Uwa">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="Tinapa Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://en.wikipedia.org/wiki/Calabar#/media/File:Hand_sculpture_roundabout,_Calabar,_Cross_River_state2.jpg">
-    <meta property="og:url" content="https://unclejoefx.github.io/wdd230/Chamber/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
+<meta charset="UTF-8">
+<meta name="description" content="Tinapa Chamber of Commerce">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Uwa Joseph Uwa">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/larger.css">
+<link rel="stylesheet" href="styles/menu.css">
+<script src="scripts/menu.js" defer></script>
+<script src="scripts/calWeather.js" defer></script>
+<script src="scripts/spotLight.js" defer></script>
+<script src="scripts/banner.js" defer></script>
+<meta property="og:title" content="Calabar, Cross River State, Nigeria">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://en.wikipedia.org/wiki/Calabar#/media/File:Hand_sculpture_roundabout,_Calabar,_Cross_River_state2.jpg">
+<meta property="og:url" content="https://unclejoefx.github.io/wdd230/">
+<title>Tinapa Chamber of Commerce</title>
+</head>
 <body>
     <header>
         <div class="hero-wrapper">
@@ -33,13 +29,13 @@
             </div>
         </div>
     </header>
-
+    
     <button id="nav-btn"></button>
     <nav class="menu">
         <a href="../week01/chamber-site-plan.html">Site Plan</a>
         <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
-        <a href="join.html">Form</a>
+        <a href="join.html">Join Us</a>
     </nav>
 
     <main>
@@ -52,7 +48,7 @@
                         <button onclick="closeBanner()">Close</button>
                     </section>
                 </div>
-
+                
 
                 <section class="card">
                     <div id="information">
@@ -67,17 +63,20 @@
                     </div>
                 </section>
             </div>
+            <div class="spotlight-wrapper">
+                <h3>Member Spotlight</h3>
+                <section id="spotlight">
+                    <!-- Dynamic spotlight members will be displayed here -->
+                </section>
+            </div>
         </div>
     </main>
-
     <footer>
-        <div>
-            <p id="copyright"></p>🌼Tinapa Chamber of Commerce🌼
-        </div>
+        <p id="copyright"></p>
         <p id="lastModified"></p>
-        <p>info@tinapachamber.com</p>
-        <p>WDD230 Project | BYU</p>
+        <p>🌼Uwa Joseph Uwa 🌼 Nigeria 🌼</p>
+        <p> WDD230 - Project | BYU</p>
     </footer>
+    <script src="../scripts/getDates.js"></script>
 </body>
-
 </html>
